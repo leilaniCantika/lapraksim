@@ -12,6 +12,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body id="Home">
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
@@ -207,11 +208,13 @@
     <p><i class="bi bi-instagram"></i><a href="https://www.instagram.com/leilanicntka/?next=%2F" target="_blank" class="text-white fw-bold">  Sosial Media</a></p>
 </footer>
 <!-- End Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+<form name="Contact-Form">
+  <input name="name" type="text" placeholder="Name" required>
+  <button type="submit">Send</button>
+</form>
+
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkJBProjYsP_etOiPxHWY3CXz1lyzerbuUfnaQ8t4KQhYf-KuxpHuPIfsgN6WLTsvV/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxsC68oMclWwexLKgyoEk6s_nb8S9gs_19XNfeOW1TieJKYC25oDm20oKlkki6oywFO/exec'
   const form = document.forms['Contact-Form']
 
   form.addEventListener('submit', e => {
