@@ -1,0 +1,18 @@
+.jumbotron {
+  padding-top: 10rem;
+  background-color: #d9e8ff;
+}
+
+#Layanan {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5 rem;
+}
+
+.card img {
+  object-fit: cover; /* Membuat gambar sesuai dengan area */
+  height: 600px; /* Atur tinggi sesuai kebutuhan */
+  width: 100%;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulir Pendaftaran Perpustakaan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="Home">
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/perpus.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" data-bs-toggle="dropdown">
+                  Layanan</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#pendaftaran">Pendaftaran Anggota</a></li>
+                  <li><a class="dropdown-item" href="#informasi">Informasi Layanan</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#Koleksi">Koleksi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+    <!-- Start Jumbotron -->
+    <section class="jumbotron text-center">
+      <h1 class="display-4">Selamat Datang <i class="bi bi-emoji-laughing"></i>!</h1>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,32L40,48C80,64,160,96,240,138.7C320,181,400,235,480,245.3C560,256,640,224,720,186.7C800,149,880,107,960,117.3C1040,128,1120,192,1200,197.3C1280,203,1360,149,1400,122.7L1440,
+        96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End Jumbotron -->
+
+    <!-- Start About -->
+    <section id="About">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-4">
+            <p>
+              Selamat datang di Perpustakaan Sekolah. Kami menyediakan berbagai layanan untuk mendukung kebutuhan literasi siswa.
+            </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,192L40,197.3C80,203,160,213,240,
+            197.3C320,181,400,139,480,144C560,149,640,203,720,197.3C800,192,
+            880,128,960,117.3C1040,107,1120,149,1200,181.3C1280,213,1360,235,
+            1400,245.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,
+            320,1040,320,960,320C880,320,800,320,720,320C640,320,
+            560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End About -->
+
+    <!-- Start Pendaftaran anggota -->
+<section id="pendaftaran" class="py-5">
+  <div class="container">
+      <div class="row text-center mb-3">
+          <div class="col">
+              <h2>Pendaftaran Anggota</h2>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <form name = "Contact-Form">
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Nama Lengkap</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="name" name="name" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="kelas" class="form-label">Kelas</label>
+                    <input type="text" class="form-control" id="kelas" aria-describedby="kelas" name="kelas" />
+                </div>
+                  <div class="mb-3">
+                      <label for="nis" class="form-label">Nomor Induk Siswa (NIS)</label>
+                      <input type="text" class="form-control" id="nis" aria-describedby="nis" name="nis"   />
+                  </div>
+                  <div class="mb-3">
+                    <label for="alamat" class="form-label">Alamat</label>
+                    <input type="text" class="form-control" id="alanat" aria-describedby="alamat" name="alamat" />
+                </div>
+                <div class="mb-3">
+                  <label for="notelepon" class="form-label">Nomor Telepon</label>
+                  <input type="text" class="form-control" id="notelepon" aria-describedby="notelepon" name="notelepon" />
+              </div>
+                  <button type="submit" class="btn btn-primary">Daftar</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,96L48,128C96,160,192,224,288,224C384,
+          224,480,160,576,128C672,96,768,96,864,133.3C960,171,1056,245,1152,234.7C1248,224,1344,
+          128,1392,80L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,
+          320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+  </svg>
+</section>
+<!-- End pendaftaran anggota -->
+
+<!-- Start Koleksi -->
+     <section id="Koleksi" class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2>Koleksi Buku</h2>
+                </div>
+            </div>
+            <div class="row g-4"> <!-- Tambahkan g-4 untuk jarak antar kartu -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/buku1.jpg" class="card-img-top" alt="Buku 1" />
+                    <div class="card-body">
+                        <p class="card-text">Buku Fiksi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/buku2.jpg" class="card-img-top" alt="Buku 2" />
+                    <div class="card-body">
+                        <p class="card-text">Buku Non-Fiksi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/buku_3.jpg" class="card-img-top" alt="Buku 3" />
+                    <div class="card-body">
+                        <p class="card-text">Ensiklopedia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                  <img src="images/buku4.jpg" class="card-img-top" alt="Buku 4" />
+                  <div class="card-body">
+                      <p class="card-text">Kamus</p>
+                  </div>
+              </div>
+          </div>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,181.3C672,160,768,96,864,
+            96C960,96,1056,160,1152,186.7C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,
+            320,1248,320,1152,320C1056,320,960,320,864,320C768,320,
+            672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+    </svg>
+</section>
+    <!-- End Koleksi -->
+
+<!-- Start Footer -->
+<footer class="bg-primary text-white text-center pb-5">
+    <p><i class="bi bi-geo-alt"></i>  Alamat: Jl. Kaliurang km 14.5, Sleman, Yogyakarta 55584</p>
+    <p><i class="bi bi-whatsapp"></i>  Contact: +6281214963213</p>
+    <p><i class="bi bi-instagram"></i><a href="https://www.instagram.com/leilanicntka/?next=%2F" target="_blank" class="text-white fw-bold">  Sosial Media</a></p>
+</footer>
+<!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkJBProjYsP_etOiPxHWY3CXz1lyzerbuUfnaQ8t4KQhYf-KuxpHuPIfsgN6WLTsvV/exec'
+  const form = document.forms['Contact-Form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
